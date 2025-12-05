@@ -319,18 +319,51 @@ button:disabled {
 </div>
  
 
-<!-- CHECK-IN PAGE --> 
+ 
 <div id="checkinPage" class="page"> 
-<h2>Online Check-in</h2> 
-<form> 
-<label>Full Name *</label> 
-<input type="text" placeholder="e.g. John Doe" required> 
-<label>Email *</label> 
-<input type="email" placeholder="e.g. john@example.com" required> 
-<label>Reservation Number *</label> 
-<input type="text" placeholder="e.g. 123456" required> 
-<button type="submit" style="background-color: #830051;" disabled>Confirm</button>
-</form> 
+  <h2>Atención al paciente</h2> 
+  <form id="formCheckin">
+    <label>Nombre y apellidos del declarante *</label> 
+    <input type="text" placeholder="e.j. Pablo Rodríguez Navarro" id="declarante" required>
+    
+    <label>Nombre del paciente *</label> 
+    <input type="text" placeholder="e.j. Sandra" id="nombrePaciente" required>
+    
+    <label>Apellidos del paciente *</label> 
+    <input type="text" placeholder="e.j. Ruiz Requena" id="apellidosPaciente" required>
+    
+    <label>País</label>
+    <select id="pais">
+      <option value="">-- Selecciona --</option>
+      <option>España</option>
+      <option>Alemania</option>
+      <option>Reino Unido</option>
+      <option>Francia</option>
+      <option>Italia</option>
+      <option>Portugal</option>
+    </select>
+
+    <label>Tipo de consulta</label>
+    <select id="tipoConsulta" required>
+      <option value="">-- Selecciona --</option>
+      <option value="queja">Queja</option>
+      <option value="sugerencia">Sugerencia</option>
+      <option value="agradecimiento">Agradecimiento</option>
+      <option value="solicitud_info">Solicitud de información</option>
+    </select>
+    
+    <label>Mensaje *</label>
+    <textarea placeholder="Escribe tu mensaje aquí..." id="mensaje" required></textarea>
+    
+    <div>
+      <label>
+        <input type="checkbox" id="proteccionDatos" required>
+        He leído la información básica de <a href="/proteccion-de-datos" target="_blank">protección de datos</a> *
+      </label>
+    </div>
+    
+    <button type="submit" style="background-color: #830051;" disabled id="btnSubmit">Confirm</button>
+  </form> 
 </div> 
 
 <!-- SERVICES PAGE -->
@@ -701,6 +734,17 @@ document.querySelectorAll('.flipcard').forEach(card => {
     card.classList.toggle('flipped');
   });
 });
+
+
+  // Activar el botón solo si todos los campos requeridos están completos
+  const form = document.getElementById('formCheckin');
+  const btn = document.getElementById('btnSubmit');
+
+  form.addEventListener('input', () => {
+    const valid = form.checkValidity();
+    btn.disabled = !valid;
+  });
+
 
 
 </script>
