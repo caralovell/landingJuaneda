@@ -627,7 +627,7 @@ const surveySubmit = surveyForm.querySelector('button[type="submit"]');
 surveySubmit.disabled = true;
 surveyForm.addEventListener('submit', e => {
     e.preventDefault();
-    showConfirm('Survey submitted! Thank you.');
+    showConfirm('Encuesta enviada! Muchas gracias.');
     surveyForm.reset();
     surveyForm.querySelectorAll('.selected').forEach(el => el.classList.remove('selected'));
     surveySubmit.disabled = true;
@@ -654,7 +654,7 @@ checkinForm.addEventListener('input', () => {
 
 checkinForm.addEventListener('submit', e => {
     e.preventDefault();
-    showConfirm("Your check-in is complete, you may pick up your key from reception and enjoy your stay.");
+    showConfirm("Su petición ha sido enviada, contactaremos con usted lo antes posible.");
     checkinForm.reset();
     checkinSubmit.disabled = true;
 });
