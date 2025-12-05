@@ -3,7 +3,7 @@
 <head> 
 <meta charset="UTF-8" /> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-<title>Crowne Plaza</title> 
+<title>Juaneda</title> 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
 <style> 
 /* --- RESET BOX SIZING --- */
@@ -235,85 +235,84 @@ button:disabled {
 </head> 
 <body> 
 <nav id="navbar"> 
-<img src="./hotel/IHG-Logo.png" alt="IHG Logo" id="ihgLogo"> 
-<img src="./hotel/crowne-logo.jpg" alt="Crowne Plaza Logo" id="crowneLogo"> 
+<img src="./juaneda/logo.png" alt="IHG Logo" id="ihgLogo"> 
 </nav> 
 
 <!-- HOME PAGE --> 
 <div id="homePage" class="page active"> 
 <div class="hero" id="hero"> 
 <div class="slider-track" id="sliderTrack"> 
-<img src="./hotel/hotel1.jpg" alt="Hotel 1"> 
-<img src="./hotel/hotel2.jpg" alt="Hotel 2"> 
-<img src="./hotel/hotel3.jpg" alt="Hotel 3"> 
-<img src="./hotel/hotel4.jpg" alt="Hotel 4"> 
-<img src="./hotel/hotel5.jpg" alt="Hotel 5"> 
-<img src="./hotel/hotel6.jpg" alt="Hotel 6"> 
+<img src="./juaneda/hospital1.jpg" alt="Hotel 1"> 
+<img src="./juaneda/hospital2.jpg" alt="Hotel 2"> 
+<img src="./juaneda/hospital3.jpg" alt="Hotel 3"> 
+<img src="./juaneda/hospital4.jpg" alt="Hotel 4"> 
+<img src="./juaneda/hospital5.jpg" alt="Hotel 5"> 
+<img src="./juaneda/hospital6.jpg" alt="Hotel 6"> 
 </div> 
     
 <div class="slider-dots" id="sliderDots"></div>
     
 <div class="hero-arrow left" id="prevSlide">‹</div> 
 <div class="hero-arrow right" id="nextSlide">›</div> 
-<p class="intro-text">Welcome to Riyadh</p> 
+<p class="intro-text">Cuidamos de su salud en Mallorca</p> 
 </div> 
 
 <div class="sections"> 
-<a class="section-button" href="https://www.ihg.com/crowneplaza/hotels/gb/en/riyadh/ruhit/hoteldetail/rooms" data-external> 
-<img src="./hotel/room.jpg" alt="Book a room"> 
-<span>Book a room</span> 
+<a class="section-button" href="https://app.tuotempo.com/mop/index.php?dbName=tt_portal_juaneda_prod#search/query/%26" data-external> 
+<img src="./juaneda/citaprevia.jpg" alt="Book a room"> 
+<span>Cita previa</span> 
 </a> 
 <div class="section-button" onclick="navigateTo('checkinPage')"> 
-<img src="./hotel/crowne.jpg" alt="Check-in"> 
-<span>Check-in</span> 
+<img src="./juaneda/atencion.jpg" alt="Check-in"> 
+<span>Atención al paciente</span> 
 </div> 
 <a class="section-button" href="https://maps.situm.com/Cara-hotel?lng=es&buildingid=19027&floorid=64456" data-external> 
 <img src="./hotel/situm.jpg" alt="Map view"> 
-<span>Map view</span> 
+<span>Mapa</span> 
 </a> 
 <div class="section-button" onclick="navigateTo('servicesPage')"> 
-<img src="./hotel/pool.jpg" alt="Services"> 
-<span>Services</span> 
+<img src="./juaneda/servicio.jpg" alt="Services"> 
+<span>Unidades y servicios</span> 
 </div> 
 <a class="section-button" href="https://nescloud.net/sensordata/public_panel/EuZIUd0hD7uGkAuAoZhSyWaFxuWeGzWk" data-external> 
 <img src="./hotel/edit.jpg" alt="Room comfort"> 
-<span>Room comfort</span> 
+<span>Bienestar del paciente</span> 
 </a> 
 <div class="section-button" onclick="navigateTo('accessibilityPage')"> 
 <img src="./hotel/access.jpg" alt="Accessibility"> 
-<span>Accessibility</span> 
+<span>Accesibilidad</span> 
 </div> 
 <a class="section-button" href="https://vega.imascono.com/" data-external> 
 <img src="./hotel/virtual.jpg" alt="Virtual assistant"> 
-<span>Virtual assistant</span> 
+<span>Asistente virtual</span> 
 </a> 
 <div class="section-button" onclick="navigateTo('technologyPage')"> 
-<img src="./hotel/assitance.jpg" alt="Robotic service"> 
-<span>Robotic service</span> 
+<img src="./juaneda/robot.jpg" alt="Robotic service"> 
+<span>Servicios automatizados</span> 
 </div>
 
 <div class="section-button" id="surveyButton" onclick="navigateTo('surveyPage')"> 
-<img src="./hotel/reception.jpg" alt="Satisfaction survey"> 
-<span>Satisfaction survey</span> 
+<img src="./juaneda/encuesta.jpg" alt="Satisfaction survey"> 
+<span>Encuesta de satisfacción</span> 
 </div> 
 </div> 
 </div> 
 
 <!-- ACCESSIBILITY PAGE --> 
 <div id="accessibilityPage" class="page"> 
-  <h2>Accessibility</h2> 
+  <h2>Accesibilidad</h2> 
   <div class="sections"> 
 
     <!-- Visual accessibility button -->
     <a class="section-button" href="https://www.navilens.com/es/" data-external>
-      <img src="./hotel/navilens.jpg" alt="Visual accessibility">
-      <span>Visual accessibility</span>
+      <img src="./juaneda/navilens.jpg" alt="Visual accessibility">
+      <span>Accesibilidad visual</span>
     </a>
 
     <!-- Acoustic accessibility button -->
     <a class="section-button" href="https://www.visualfy.com/" data-external>
-      <img src="./hotel/visualfy.jpg" alt="Acoustic accessibility">
-      <span>Acoustic accessibility</span>
+      <img src="./juaneda/visualfy.jpg" alt="Acoustic accessibility">
+      <span>Accesibilidad acústica</span>
     </a>
 
   </div>
@@ -692,8 +691,7 @@ document.querySelectorAll('.section-button').forEach(btn => {
 
 // --- LOGOS: IR A PÁGINA PRINCIPAL ---
 const ihgLogo = document.getElementById('ihgLogo');
-const crowneLogo = document.getElementById('crowneLogo');
-[ihgLogo, crowneLogo].forEach(logo => {
+[ihgLogo].forEach(logo => {
     if(logo) logo.addEventListener('click', () => navigateTo('homePage'));
 });
 
